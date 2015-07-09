@@ -1,0 +1,21 @@
+{
+  "name": "tracker-front",
+  "version": "0.0.0",
+  "homepage": "https://github.com/agency/australianaid-advocacytracker-frontend",
+  "authors": [
+    "agency.sc"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-permission": "~0.2.0",
+    "satellizer": "~0.11.1",
+    "angular-socket-io": "~0.7.0"
+  }
+}

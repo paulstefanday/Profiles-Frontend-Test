@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+		<title></title>
+		<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body ng-app="app" >
+
+		<div ng-controller="test">
+			<h1>Socket Test</h1>
+			<pre ng-repeat="item in activities | orderBy:'-createdAt'">{{ item.type }} at {{ item.createdAt | date:'medium' }}</pre>
+		</div>
+		
+		<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+  		<script src="bower_components/angular/angular.js"></script>
+  		<script src="bower_components/angular-socket-io/socket.js"></script>
+  		<script src="bindtable.js"></script>
+  		<script src="bundle.js"></script>
+
+	</body>
+
+</html>
